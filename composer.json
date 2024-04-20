@@ -27,7 +27,7 @@
         "ext-mbstring": "*",
         "composer/semver": "^3.4",
         "guzzlehttp/guzzle": "^6.0|^7.0",
-        "highsidelabs/saloon-sdk-generator": "^1.0",
+        "highsidelabs/saloon-sdk-generator": "dev-lc",
         "saloonphp/saloon": "^3.4",
         "openspout/openspout": "^4.23",
         "illuminate/support": "^10.48"
@@ -38,6 +38,12 @@
         "voku/simple_html_dom": "^4.8",
         "laravel/pint": "^1.13"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lc-excell/saloon-sdk-generator.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "SellingPartnerApi\\": "src/"
