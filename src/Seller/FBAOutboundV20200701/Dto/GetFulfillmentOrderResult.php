@@ -36,6 +36,6 @@ final class GetFulfillmentOrderResult extends Dto
         public array $returnItems,
         public array $returnAuthorizations,
         public ?array $fulfillmentShipments = null,
-        public ?array $paymentInformation = null,
+        public mixed $paymentInformation = null,
     ) {}
 }

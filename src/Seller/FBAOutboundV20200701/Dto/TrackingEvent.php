@@ -22,8 +22,8 @@ final class TrackingEvent extends Dto
      */
     public function __construct(
         public \DateTimeInterface $eventDate,
-        public TrackingAddress $eventAddress,
         public string $eventCode,
-        public string $eventDescription,
+        public ?string $eventDescription = null,
+        public ?TrackingAddress $eventAddress = null,
     ) {}
 }

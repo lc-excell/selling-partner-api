@@ -42,7 +42,7 @@ final class FulfillmentPreview extends Dto
         public bool $isFulfillable,
         public bool $isCodCapable,
         public string $marketplaceId,
-        public ?ScheduledDeliveryInfo $scheduledDeliveryInfo = null,
+        public ?ScheduledDeliveryInfo $scheduledDeliveryinfo = null,
         public ?Weight $estimatedShippingWeight = null,
         public ?array $estimatedFees = null,
         public ?array $fulfillmentPreviewShipments = null,

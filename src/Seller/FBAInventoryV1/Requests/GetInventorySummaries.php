@@ -66,7 +66,7 @@ class GetInventorySummaries extends Request
             'granularityType' => $this->granularityType,
             'granularityId' => $this->granularityId,
             'marketplaceIds' => $this->marketplaceIds,
-            'details' => $this->details,
+            'details' => $this->details ? "true" : "false",
             'startDateTime' => $this->startDateTime?->format('Y-m-d\TH:i:s\Z'),
             'sellerSkus' => $this->sellerSkus,
             'sellerSku' => $this->sellerSku,
