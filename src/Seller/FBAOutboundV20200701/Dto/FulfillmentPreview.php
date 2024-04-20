@@ -33,7 +33,7 @@ final class FulfillmentPreview extends BaseDto
         public readonly bool $isFulfillable,
         public readonly bool $isCodCapable,
         public readonly string $marketplaceId,
-        public readonly ?ScheduledDeliveryInfo $scheduledDeliveryInfo = null,
+        public readonly ?ScheduledDeliveryInfo $scheduledDeliveryinfo = null,
         public readonly ?Weight $estimatedShippingWeight = null,
         public readonly ?array $estimatedFees = null,
         public readonly ?array $fulfillmentPreviewShipments = null,
