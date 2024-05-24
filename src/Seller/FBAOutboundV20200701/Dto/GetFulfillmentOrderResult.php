@@ -26,6 +26,7 @@ final class GetFulfillmentOrderResult extends BaseDto
         public readonly array $returnItems,
         public readonly array $returnAuthorizations,
         public readonly ?array $fulfillmentShipments = null,
+        public readonly mixed $paymentInformation = null,
     ) {
     }
 }
