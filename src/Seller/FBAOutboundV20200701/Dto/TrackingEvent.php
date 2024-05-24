@@ -14,9 +14,9 @@ final class TrackingEvent extends BaseDto
      */
     public function __construct(
         public readonly \DateTime $eventDate,
-        public readonly TrackingAddress $eventAddress,
         public readonly string $eventCode,
-        public readonly string $eventDescription,
+        public readonly ?string $eventDescription = null,
+        public readonly ?TrackingAddress $eventAddress = null,
     ) {
     }
 }
