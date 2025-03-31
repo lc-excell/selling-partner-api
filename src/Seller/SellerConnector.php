@@ -352,4 +352,9 @@ class SellerConnector extends SellingPartnerApi
     {
         return new UploadsV20201101\Api($this);
     }
+
+    public function applicationManagementV20231130(): ApplicationManagementV20231130\Api
+    {
+        return new ApplicationManagementV20231130\Api($this);
+    }
 }
