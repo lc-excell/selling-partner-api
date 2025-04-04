@@ -9,16 +9,21 @@ use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
+use SellingPartnerApi\Enums\GrantlessScope;
+use SellingPartnerApi\Middleware\Grantless;
 use SellingPartnerApi\Seller\ApplicationManagementV20231130\Responses\ErrorList;
 
 /**
  * rotateApplicationClientSecret
  */
-class RotateApplicationClientSecret extends Request implements HasBody
+class RotateApplicationClientSecret extends Request
 {
-    use HasJsonBody;
-
     protected Method $method = Method::POST;
+
+    public function __construct()
+    {
+        $this->middleware()->onRequest(new Grantless(GrantlessScope::ROTATE_TOKEN));
+    }
 
     public function resolveEndpoint(): string
     {
